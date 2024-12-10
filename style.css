@@ -1,0 +1,88 @@
+body, h1, h2, p, label, input, select, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f8f0f6; 
+    color: #333; 
+    padding: 20px;
+}
+
+header {
+    background-color: #ff9cd1; 
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color:  #ff9cd1;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #d667b1; 
+    font-weight: bold;
+}
+
+input, select {
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #ff66b2; 
+    width: 100%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #ff80bf;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: #ff80bf; 
+    border-color: #ff66b2;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    width: 100%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #da1e7c; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ff9cd1;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: rgb(219, 20, 169);
+    font-size: 1rem;
+}
+
