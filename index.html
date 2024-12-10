@@ -17,7 +17,52 @@
     <header>
         <!-- place navbar here -->
     </header>
-    <main></main>
+    <main>
+
+        <div class="container">
+            <!--greeting and instructions-->
+            <div class="text-center mb-4">
+                <h1>What's Your Fantasy Hero Name?</h1>
+                <p> FIll out the following to find out what your fantasy name is.</p>
+            </div>
+            <form id="fantasyForm" class=" mb-4">
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Enter Your First Name">
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Enter Your Last Name">
+                </div>
+                <div class="mb-3">
+                    <label for="roadType" class="form-label">Choose Road Type:</label>
+                    <select id="roadType" class="form-select">
+                        <option value="road">Road</option>
+                        <option value="avenue">Avenue</option>
+                        <option value="court">Court</option>
+                        <option value="street">Street</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="favoriteAnimal" class="form-label">Whats Your Favorite Animal?</label>
+                    <input type="text" class="form-control" id="favoriteAnimal"
+                        placeholder="Enter Your Favorite Animal">
+                </div>
+                <div class="mb-3">
+                    <label for="favoriteColor" class="form-label">Whats Your Favorite Color?</label>
+                    <input type="text" class="form-control" id="favoriteColor" placeholder="Enter Your Favorite Color">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Generate Name</button>
+            </form>
+
+        </div>
+
+
+
+
+
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>
