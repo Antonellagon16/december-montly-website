@@ -69,16 +69,35 @@ function genFullName() {
     //define variables from inputs
     const firstName = document.getElementById('firstName').value.trim()
     const lastName = document.getElementById('lastName').value.trim()
-    const roadType = document.getElementById('roasType').value.trim()
+    const roadType = document.getElementById('roadType').value.trim()
     const favoriteColor = document.getElementById('favoriteColor').value.trim()
     const favoriteAnimal = document.getElementById('favoriteAnimal').value.trim()
 
 
     //genrate each part the name using Helper fuctions
     const prefix = genPrefix(firstName)
-    const FirstName = genFirstName(firstName)
+    const newFirstName = genFirstName(firstName)
     const middleName = genMiddleName(roadType, favoriteColor)
     const newLastName = genLastName(lastName)
-    const suffix = gensuffix(favoriteAnimal)
+    const suffix = genSuffix(favoriteAnimal)
 
+    //functions to capitalize words
+    const capitalizePrefix = capitalize(prefix)
+    const capitalizeFirstName = capitalize(newFirstName)
+    const capitalizeMiddleName = capitalize(middleName)
+    const capitalizeLastName = capitalize(newLastName)
+    const capitalizeSuffix = capitalize(suffix)
+
+
+
+    const fullName = `${capitalizePrefix}${capitalizeFirstName}${capitalizeMiddleName}${capitalizeLastName}${capitalizeSuffix}`
+
+    //display result
+    document.getElementById('result').textContent = fullName
+    console.log(fullName)
+}
+
+//capitalizer function
+function capitalize(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
 }

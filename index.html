@@ -28,11 +28,11 @@
             <form id="fantasyForm" class=" mb-4">
                 <div class="mb-3">
                     <label for="firstname" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstname" placeholder="Enter Your First Name">
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter Your First Name">
                 </div>
                 <div class="mb-3">
                     <label for="lastname" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastname" placeholder="Enter Your Last Name">
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter Your Last Name">
                 </div>
                 <div class="mb-3">
                     <label for="roadType" class="form-label">Choose Road Type:</label>
@@ -53,9 +53,9 @@
                     <label for="favoriteColor" class="form-label">Whats Your Favorite Color?</label>
                     <input type="text" class="form-control" id="favoriteColor" placeholder="Enter Your Favorite Color">
                 </div>
-                <button type="submit" class="btn btn-primary w-100" onclick="genFullName">Generate Name</button>
+                <div type="submit" class="btn btn-primary w-100" onclick="genFullName()">Generate Name</div>
             </form>
-
+            <div id="result"></div>
         </div>
 
 
